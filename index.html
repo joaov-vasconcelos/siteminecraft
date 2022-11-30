@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft na AWS</title>
+</head>
+<body>
+    <div class="topo">
+        <h1>Minecraft na AWS</h1>
+        <h2>Servidor de Minecraft em Nuvem na AWS</h2>
+    </div>
+
+    <div class="bottom">
+      <button class="botãoinferior" disabled><h1>Selecione os 2 itens<br> para fechar o pedido</h1></button>
+      <button class="botãoverde esconder" onclick="acabou()"><h1>Finalize seu pedido!</h1></button>
+    </div>
+
+    <div class="menu">
+      
+      <p class="categoria">Primeiro, selecione seu VIP</p>
+
+      <div class="vip">
+        <button class="ouro" onclick="selecionarVip('ouro'); final()">
+          <div class="opção ">
+            <img class="item" src="ouro.png"/>
+            <h1 class="bonus">VIP Ouro</h1>
+            <h2>1 mês de acesso a área VIP<br>3 terrenos para construção<br>2.000.000$</h2>
+            <p class="price">R$ 30,00</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </div>
+        </button>
+        
+      <span></span>
+
+        <button class="prata" onclick="selecionarVip('prata'); final()">
+          <div class="opção">
+            <img class="item" src="prata.png"/>
+            <h1 class="bonus">VIP Prata</h1>
+            <h2>15 dias de acesso a área VIP<br>2 terrenos para construção<br>1.000.000$</h2>
+            <p class="price">R$ 20,00</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </div>
+        </button>
+
+      <span></span>
+
+        <button class="bronze" onclick="selecionarVip('bronze'); final()">
+          <div class="opção">
+            <img class="item" src="bronze.png"/>
+            <h1 class="bonus">VIP Bronze</h1>
+            <h2>7 dias de acesso a área VIP<br>1 terrenos para construçao<br>500.000$</h2>
+            <p class="price">R$ 10,00</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </div>
+        </button>
+
+      </div>
+
+      <p class="categoria">Agora, seu método de pagamento</p>
+
+      <div class="pagamento">
+        
+        <button class="pix" onclick="selecionarPagamento('pix'); final()">
+          <div class="opção">
+            <img class="item" src="pix.png"/>
+            <h1 class="pagamento">Pix</h1>
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </div>
+        </button>
+
+      <span></span>
+        
+        <button class="cartao" onclick="selecionarPagamento('cartao'); final()">
+          <div class="opção">
+            <img class="item" src="cartao.png"/>
+            <h1 class="pagamento">Cartão de débito/crédito</h1>
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </div>
+        </button>
+
+      <span></span>
+
+        <button class="paypal" onclick="selecionarPagamento('paypal'); final()">
+          <div class="opção">
+            <img class="item" src="paypal.png"/>
+            <h1 class="pagamento">Paypal</h1>
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </div>
+        </button>
+
+    </div>
+
+    </div>
+  <script src="scripts.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
